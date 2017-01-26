@@ -1,0 +1,25 @@
+---
+title: "Test Presentation"
+author: "Esko Nuutila"
+date: "26 Jan 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(dplyr)
+```
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+x <- rnorm(100, mean=10, sd=1)
+y <- rnorm(100, mean=2, sd=2)
+```
+
+## Slide with Plot
+
+```{r pressure, fig.cap="Plot", fig.width=5, fig.height=4}
+plot(x, y)
+```
+
